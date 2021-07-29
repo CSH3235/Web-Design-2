@@ -1,0 +1,33 @@
+
+nav {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    transition: opacity 0.55s ease;
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        li {
+            margin: 0;
+            list-style: none;
+            line-height: 50px;
+            text-align: center;
+            a {
+                color: #000;
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 2rem;
+                transition: color 0.3s ease;
+                @at-root a:hover {
+                    color: #E0403A;
+                }
+                
+            }
+        }
+    }
+    opacity: 0;
+}
+
