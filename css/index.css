@@ -120,7 +120,7 @@ a:hover {
   height: 250px;
   width: 250px;
   margin: 0;
-  background: radial-gradient(circle at -100px 10px, #f6f3ff, #cd9cf2);
+  background-image: radial-gradient(farthest-corner at 10px 40px, #fce7fc 0%, #cd9cf2 100%);
   -webkit-animation: up-down_1 3s ease-in-out infinite;
           animation: up-down_1 3s ease-in-out infinite;
 }
@@ -156,7 +156,7 @@ a:hover {
   height: 100px;
   width: 100px;
   margin: 0;
-  background-image: radial-gradient(farthest-corner at -400px 40px, #f6f3ff 0%, #cd9cf2 100%);
+  background-image: radial-gradient(farthest-corner at 10px 40px, #fce7fc 0%, #cd9cf2 100%);
   -webkit-animation: up-down_2 3s ease-in-out infinite;
           animation: up-down_2 3s ease-in-out infinite;
 }
@@ -192,11 +192,9 @@ a:hover {
   height: 250px;
   width: 250px;
   margin: 0;
-  background: radial-gradient(circle at -100px 10px, #f6f3ff, #cd9cf2);
+  background-image: radial-gradient(farthest-corner at 10px 40px, #fce7fc 0%, #cd9cf2 100%);
   -webkit-animation: up-down_3 3s ease-in-out infinite;
           animation: up-down_3 3s ease-in-out infinite;
-  -webkit-box-shadow: 8px 9px 10px rgba(15, 15, 15, 0.2);
-          box-shadow: 8px 9px 10px rgba(15, 15, 15, 0.2);
 }
 
 @-webkit-keyframes up-down_3 {
