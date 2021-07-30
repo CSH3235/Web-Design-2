@@ -1,4 +1,56 @@
-.sphere {
+.sphere_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background: #fff;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+    background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
+    animation: up-down 2s ease-in-out infinite;
+}
+
+
+@keyframes up-down {
+    0% {
+        
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(18px);
+    }
+}
+
+.sphere_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background: #fff;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+    background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
+    animation: up-down 2s ease-in-out infinite;
+}
+
+
+@keyframes up-down {
+    0% {
+        
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(18px);
+    }
+}
+
+.sphere_3 {
     position: absolute;
     top: 50%;
     left: 50%;
