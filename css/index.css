@@ -111,7 +111,7 @@ a:hover {
           transform: rotate(-45deg) translate(-2px, -1px);
 }
 
-.sphere_1 {
+.sphere_1_1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -147,18 +147,18 @@ a:hover {
   }
 }
 
-.sphere_1 {
+.sphere_1_2 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 20%;
   background: #fff;
   border-radius: 100%;
-  height: 250px;
-  width: 250px;
+  height: 100px;
+  width: 100px;
   margin: 0;
   background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
-  -webkit-animation: up-down 2s ease-in-out infinite;
-          animation: up-down 2s ease-in-out infinite;
+  -webkit-animation: up-down 3s ease-in-out infinite;
+          animation: up-down 3s ease-in-out infinite;
 }
 
 @keyframes up-down {
@@ -172,18 +172,18 @@ a:hover {
   }
 }
 
-.sphere_3 {
+.sphere_1_3 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 10%;
   background: #fff;
   border-radius: 100%;
   height: 250px;
   width: 250px;
   margin: 0;
   background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
-  -webkit-animation: up-down 2s ease-in-out infinite;
-          animation: up-down 2s ease-in-out infinite;
+  -webkit-animation: up-down 3s ease-in-out infinite;
+          animation: up-down 3s ease-in-out infinite;
 }
 
 @keyframes up-down {
