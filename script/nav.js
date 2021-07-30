@@ -7,6 +7,7 @@ window.onload = function() {
         
         if(check.checked == true) {
             nav.style.opacity = 1;
+            nav.style.zIndex = 99999;
         } else {
             nav.style.opacity = 0;
         }

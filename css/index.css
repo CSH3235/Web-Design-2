@@ -42,7 +42,7 @@ a:hover {
   position: absolute;
   top: 50px;
   left: 50px;
-  z-index: 1;
+  z-index: 9999999;
   -webkit-user-select: none;
   -moz-user-select: none;
    -ms-user-select: none;
@@ -69,7 +69,7 @@ a:hover {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #fff;
   border-radius: 3px;
   z-index: 1;
   -webkit-transform-origin: 4px 0;
@@ -117,10 +117,10 @@ a:hover {
   left: 50%;
   background: #fff;
   border-radius: 100%;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   margin: 0;
-  background: radial-gradient(circle at 100px 100px, #fff, #000);
+  background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
   -webkit-animation: up-down 2s ease-in-out infinite;
           animation: up-down 2s ease-in-out infinite;
 }
@@ -131,8 +131,8 @@ a:hover {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
   }
 }
 
@@ -142,14 +142,14 @@ a:hover {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
   }
 }
 
 html,
 body {
-  background: #242424;
+  background: #a1c4fd;
   margin: 0;
   padding: 0;
 }
