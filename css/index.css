@@ -120,55 +120,66 @@ a:hover {
   height: 250px;
   width: 250px;
   margin: 0;
-  background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
-  -webkit-animation: up-down 2s ease-in-out infinite;
-          animation: up-down 2s ease-in-out infinite;
+  background: radial-gradient(circle at -100px 10px, #f6f3ff, #cd9cf2);
+  -webkit-animation: up-down_1 3s ease-in-out infinite;
+          animation: up-down_1 3s ease-in-out infinite;
 }
 
-@-webkit-keyframes up-down {
+@-webkit-keyframes up-down_1 {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px);
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
   }
 }
 
-@keyframes up-down {
+@keyframes up-down_1 {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px);
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
   }
 }
 
 .sphere_1_2 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 20%;
   background: #fff;
   border-radius: 100%;
   height: 100px;
   width: 100px;
   margin: 0;
-  background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
-  -webkit-animation: up-down 3s ease-in-out infinite;
-          animation: up-down 3s ease-in-out infinite;
+  background-image: radial-gradient(farthest-corner at -400px 40px, #f6f3ff 0%, #cd9cf2 100%);
+  -webkit-animation: up-down_2 3s ease-in-out infinite;
+          animation: up-down_2 3s ease-in-out infinite;
 }
 
-@keyframes up-down {
+@-webkit-keyframes up-down_2 {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes up-down_2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
 
@@ -181,19 +192,32 @@ a:hover {
   height: 250px;
   width: 250px;
   margin: 0;
-  background: radial-gradient(circle at 10px 10px, #f6f3ff, #cd9cf2);
-  -webkit-animation: up-down 3s ease-in-out infinite;
-          animation: up-down 3s ease-in-out infinite;
+  background: radial-gradient(circle at -100px 10px, #f6f3ff, #cd9cf2);
+  -webkit-animation: up-down_3 3s ease-in-out infinite;
+          animation: up-down_3 3s ease-in-out infinite;
+  -webkit-box-shadow: 8px 9px 10px rgba(15, 15, 15, 0.2);
+          box-shadow: 8px 9px 10px rgba(15, 15, 15, 0.2);
 }
 
-@keyframes up-down {
+@-webkit-keyframes up-down_3 {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(18px);
-            transform: translateY(18px);
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+  }
+}
+
+@keyframes up-down_3 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
   }
 }
 
