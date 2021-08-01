@@ -146,9 +146,27 @@ a:hover {
   }
 }
 
+.container_turn {
+  position: relative;
+  top: 100px;
+}
+
+.square_1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 1000px;
+  height: 200vh;
+  width: 200vw;
+  background: #663399;
+  -webkit-transform: skewY(5deg) rotate(90deg);
+          transform: skewY(5deg) rotate(90deg);
+}
+
 html,
 body {
   background: #a1c4fd;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }

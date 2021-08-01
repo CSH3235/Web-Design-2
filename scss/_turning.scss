@@ -1,0 +1,16 @@
+.container_turn {
+    position: relative;
+    top: 100px;
+}
+
+
+.square_1 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 1000px;
+    height: 200vh;
+    width: 200vw;
+    background: #663399;
+    transform: skewY(5deg) rotate(90deg);
+}
