@@ -1,3 +1,5 @@
+$MainPosition: translateY(100px) skewY(5deg);
+
 .container_turn {
     position: relative;
     top: 100px;
@@ -8,9 +10,22 @@
     margin: 0;
     padding: 0;
     position: relative;
-    top: 1000px;
-    height: 200vh;
-    width: 200vw;
+    top: 700px;
+    left: 100px;
+    height: 1500px;
+    width: 1000px;
     background: #663399;
-    transform: skewY(5deg) rotate(90deg);
+    transform: $MainPosition;
+    transition: cubic-bezier(.86,.01,.11,1);
+    animation: goTop 1s forwards;
+}
+
+@keyframes goTop {
+    0%{
+        transform: $MainPosition rotate(90deg);
+    }
+    100%{
+        transform: translateY(-500px) skewY(5deg) rotate(90deg);
+    }
+
 }

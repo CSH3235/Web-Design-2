@@ -155,12 +155,66 @@ a:hover {
   margin: 0;
   padding: 0;
   position: relative;
-  top: 1000px;
-  height: 200vh;
-  width: 200vw;
+  top: 700px;
+  left: 100px;
+  height: 1500px;
+  width: 1000px;
   background: #663399;
-  -webkit-transform: skewY(5deg) rotate(90deg);
-          transform: skewY(5deg) rotate(90deg);
+  -webkit-transform: translateY(100px) skewY(5deg);
+          transform: translateY(100px) skewY(5deg);
+  -webkit-transition: cubic-bezier(0.86, 0.01, 0.11, 1);
+  transition: cubic-bezier(0.86, 0.01, 0.11, 1);
+  -webkit-animation: goTop 1s forwards;
+          animation: goTop 1s forwards;
+}
+
+@-webkit-keyframes goTop {
+  0% {
+    -webkit-transform: translateY(100px) skewY(5deg) rotate(90deg);
+            transform: translateY(100px) skewY(5deg) rotate(90deg);
+  }
+  100% {
+    -webkit-transform: translateY(-500px) skewY(5deg) rotate(90deg);
+            transform: translateY(-500px) skewY(5deg) rotate(90deg);
+  }
+}
+
+@keyframes goTop {
+  0% {
+    -webkit-transform: translateY(100px) skewY(5deg) rotate(90deg);
+            transform: translateY(100px) skewY(5deg) rotate(90deg);
+  }
+  100% {
+    -webkit-transform: translateY(-500px) skewY(5deg) rotate(90deg);
+            transform: translateY(-500px) skewY(5deg) rotate(90deg);
+  }
+}
+
+.container_arrow {
+  position: relative;
+  top: 500px;
+  left: 90%;
+  z-index: 9999;
+}
+
+.arrow_1,
+.arrow_2 {
+  width: 5vw;
+  height: 5vh;
+  -webkit-transition: cubic-bezier(0.86, 0.01, 0.11, 1);
+  transition: cubic-bezier(0.86, 0.01, 0.11, 1);
+  -webkit-box-shadow: -2px 2px 0 white;
+          box-shadow: -2px 2px 0 white;
+}
+
+.arrow_1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.arrow_2 {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 
 html,
