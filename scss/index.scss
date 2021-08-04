@@ -1,11 +1,11 @@
-@import "_nav", "_hamburger", "_figure", "_turning", "_arrow";
+@import "_nav", "_hamburger", "_figure", "_turning";
 
 $MainColor : #242424;
 $SubColor : #191919;
 $Font : 'Quicksand', sans-serif; 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-html,
+
 body {
     background: #a1c4fd;
     margin: 0;

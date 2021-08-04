@@ -146,78 +146,45 @@ a:hover {
   }
 }
 
-.container_turn {
-  position: relative;
-  top: 100px;
-}
-
 .square_1 {
+  position: relative;
   margin: 0;
   padding: 0;
-  position: relative;
-  top: 700px;
-  left: 100px;
-  height: 1500px;
-  width: 1000px;
+  width: 100vw;
+  height: 100vh;
   background: #663399;
-  -webkit-transform: skewY(5deg) rotate(90deg);
-          transform: skewY(5deg) rotate(90deg);
-  -webkit-transition: cubic-bezier(0.79, 0.01, 0.29, 1.01);
-  transition: cubic-bezier(0.79, 0.01, 0.29, 1.01);
-  -webkit-animation: goTop_1 1s forwards;
-          animation: goTop_1 1s forwards;
+  -webkit-transform: skew(0, 3deg) translateY(100vh);
+          transform: skew(0, 3deg) translateY(100vh);
+  -webkit-animation: goTop_1 5s cubic-bezier(1, 0, 0, 1) both;
+          animation: goTop_1 5s cubic-bezier(1, 0, 0, 1) both;
 }
 
 @-webkit-keyframes goTop_1 {
   0% {
-    -webkit-transform: translateY(100px) skewY(5deg) rotate(90deg);
-            transform: translateY(100px) skewY(5deg) rotate(90deg);
+    position: absolute;
+    -webkit-transform: translateY(100vh) skew(0, 3deg);
+            transform: translateY(100vh) skew(0, 3deg);
   }
   100% {
-    -webkit-transform: translateY(-300px) skewY(5deg) rotate(90deg);
-            transform: translateY(-300px) skewY(5deg) rotate(90deg);
+    position: absolute;
+    -webkit-transform: translateY(10vh) skew(0, 3deg);
+            transform: translateY(10vh) skew(0, 3deg);
   }
 }
 
 @keyframes goTop_1 {
   0% {
-    -webkit-transform: translateY(100px) skewY(5deg) rotate(90deg);
-            transform: translateY(100px) skewY(5deg) rotate(90deg);
+    position: absolute;
+    -webkit-transform: translateY(100vh) skew(0, 3deg);
+            transform: translateY(100vh) skew(0, 3deg);
   }
   100% {
-    -webkit-transform: translateY(-300px) skewY(5deg) rotate(90deg);
-            transform: translateY(-300px) skewY(5deg) rotate(90deg);
+    position: absolute;
+    -webkit-transform: translateY(10vh) skew(0, 3deg);
+            transform: translateY(10vh) skew(0, 3deg);
   }
 }
 
-.container_arrow {
-  position: relative;
-  top: 500px;
-  left: 90%;
-  z-index: 9999;
-}
-
-.arrow_1,
-.arrow_2 {
-  width: 5vw;
-  height: 5vh;
-  -webkit-transition: cubic-bezier(0.86, 0.01, 0.11, 1);
-  transition: cubic-bezier(0.86, 0.01, 0.11, 1);
-  -webkit-box-shadow: -2px 2px 0 white;
-          box-shadow: -2px 2px 0 white;
-}
-
-.arrow_1 {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.arrow_2 {
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
-}
-
-html,
 body {
   background: #a1c4fd;
   margin: 0;

@@ -1,32 +1,26 @@
-$MainPosition: skewY(5deg) rotate(90deg);
-
-.container_turn {
-    position: relative;
-    top: 100px;
-}
-
+$MainPosition: skew(0, 3deg);
 
 .square_1 {
+    position: relative;
     margin: 0;
     padding: 0;
-    position: relative;
-    top: 700px;
-    left: 100px;
-    height: 1500px;
-    width: 1000px;
+    width: 100vw;
+    height: 100vh;
     background: #663399;
-    transform: $MainPosition;
-    transition: cubic-bezier(.79,.01,.29,1.01);
-    animation: goTop_1 1s forwards;
+    transform: skew(0, 3deg) translateY(100vh);
+    animation: goTop_1 5s cubic-bezier(1,0,0,1) both;
 }
+
+
 
 @keyframes goTop_1 {
     0%{
-        transform: translateY(100px) $MainPosition;
+        position: absolute;
+        transform: translateY(100vh) $MainPosition;
     }
     100%{
-        transform: translateY(-300px) $MainPosition;
+        position: absolute;
+        transform: translateY(10vh) $MainPosition;
     }
-
 }
 
