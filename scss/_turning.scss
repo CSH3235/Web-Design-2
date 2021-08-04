@@ -1,4 +1,4 @@
-$MainPosition: skew(0, 3deg);
+$MainPosition_1: skew(0, 3deg);
 
 .square_1 {
     position: relative;
@@ -8,7 +8,7 @@ $MainPosition: skew(0, 3deg);
     height: 100vh;
     background: #663399;
     transform: skew(0, 3deg) translateY(100vh);
-    animation: goTop_1 5s cubic-bezier(1,0,0,1) both;
+    animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
 }
 
 
@@ -16,11 +16,24 @@ $MainPosition: skew(0, 3deg);
 @keyframes goTop_1 {
     0%{
         position: absolute;
-        transform: translateY(100vh) $MainPosition;
+        transform: translateY(100vh) $MainPosition_1;
     }
     100%{
         position: absolute;
-        transform: translateY(10vh) $MainPosition;
+        transform: translateY(10vh) $MainPosition_1;
     }
 }
+
+.square_2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #31999c;
+    transform: skew(0, 3deg) translateY(100vh);
+    animation: goTop_1 0.5s cubic-bezier(.82,-0.19,.33,1.19) both;
+}
+
+
 
