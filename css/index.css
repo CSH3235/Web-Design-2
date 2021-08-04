@@ -160,33 +160,33 @@ a:hover {
   height: 1500px;
   width: 1000px;
   background: #663399;
-  -webkit-transform: translateY(100px) skewY(5deg);
-          transform: translateY(100px) skewY(5deg);
-  -webkit-transition: cubic-bezier(0.86, 0.01, 0.11, 1);
-  transition: cubic-bezier(0.86, 0.01, 0.11, 1);
-  -webkit-animation: goTop 1s forwards;
-          animation: goTop 1s forwards;
+  -webkit-transform: skewY(5deg) rotate(90deg);
+          transform: skewY(5deg) rotate(90deg);
+  -webkit-transition: cubic-bezier(0.79, 0.01, 0.29, 1.01);
+  transition: cubic-bezier(0.79, 0.01, 0.29, 1.01);
+  -webkit-animation: goTop_1 1s forwards;
+          animation: goTop_1 1s forwards;
 }
 
-@-webkit-keyframes goTop {
+@-webkit-keyframes goTop_1 {
   0% {
     -webkit-transform: translateY(100px) skewY(5deg) rotate(90deg);
             transform: translateY(100px) skewY(5deg) rotate(90deg);
   }
   100% {
-    -webkit-transform: translateY(-500px) skewY(5deg) rotate(90deg);
-            transform: translateY(-500px) skewY(5deg) rotate(90deg);
+    -webkit-transform: translateY(-300px) skewY(5deg) rotate(90deg);
+            transform: translateY(-300px) skewY(5deg) rotate(90deg);
   }
 }
 
-@keyframes goTop {
+@keyframes goTop_1 {
   0% {
     -webkit-transform: translateY(100px) skewY(5deg) rotate(90deg);
             transform: translateY(100px) skewY(5deg) rotate(90deg);
   }
   100% {
-    -webkit-transform: translateY(-500px) skewY(5deg) rotate(90deg);
-            transform: translateY(-500px) skewY(5deg) rotate(90deg);
+    -webkit-transform: translateY(-300px) skewY(5deg) rotate(90deg);
+            transform: translateY(-300px) skewY(5deg) rotate(90deg);
   }
 }
 

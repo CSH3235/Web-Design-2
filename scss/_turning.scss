@@ -1,4 +1,4 @@
-$MainPosition: translateY(100px) skewY(5deg);
+$MainPosition: skewY(5deg) rotate(90deg);
 
 .container_turn {
     position: relative;
@@ -16,16 +16,17 @@ $MainPosition: translateY(100px) skewY(5deg);
     width: 1000px;
     background: #663399;
     transform: $MainPosition;
-    transition: cubic-bezier(.86,.01,.11,1);
-    animation: goTop 1s forwards;
+    transition: cubic-bezier(.79,.01,.29,1.01);
+    animation: goTop_1 1s forwards;
 }
 
-@keyframes goTop {
+@keyframes goTop_1 {
     0%{
-        transform: $MainPosition rotate(90deg);
+        transform: translateY(100px) $MainPosition;
     }
     100%{
-        transform: translateY(-500px) skewY(5deg) rotate(90deg);
+        transform: translateY(-300px) $MainPosition;
     }
 
 }
+
