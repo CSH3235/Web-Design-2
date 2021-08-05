@@ -52,10 +52,10 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 1000vw;
+    height: 1000vh;
     background: #743daa;
-    transform: skew(0, -4deg) translateY(80vh);
+    transform: skew(0, -4deg) translateY(40vh);
     animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     animation-delay: 0.04s;
 
@@ -66,106 +66,11 @@
 @keyframes goTop_3 {
     0%{
         position: absolute;
-        transform: translateY(80vh) skew(0, -4deg) ;
+        transform: translateY(40vh) skew(0, -4deg) ;
     }
     100%{
         position: absolute;
-        transform: translateY(20vh) skew(0, -4deg) ;
+        transform: translateY(-50vh) skew(0, -4deg) ;
     }
 }
-
-
-
-
-
-
-
-
-
-.square_4 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #3a175c;
-    transform: skew(0, 3deg) translateY(-75vh);
-    animation: goTop_4 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-
-}
-
-
-@keyframes goTop_4 {
-    0%{
-        position: absolute;
-        transform: translateY(-75vh)  skew(0, 3deg);
-    }
-    100%{
-        position: absolute;
-        transform: translateY(0vh)  skew(0, 3deg);
-    }
-}
-
-.square_5 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #53297e;
-    transform: skew(0, 2deg) translateY(-80vh);
-    animation: goTop_5 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    animation-delay: 0.02s;
-}
-
-
-
-@keyframes goTop_5 {
-    0%{
-        position: absolute;
-        transform: translateY(-80vh) skew(0, 2deg) ;
-    }
-    100%{
-        position: absolute;
-        transform: translateY(0vh) skew(0, 2deg) ;
-    }
-}
-
-
-
-.square_6 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #743daa;
-    transform: skew(0, -4deg) translateY(-90vh);
-    animation: goTop_6 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    animation-delay: 0.04s;
-
-}
-
-
-
-@keyframes goTop_6 {
-    0%{
-        position: absolute;
-        transform: translateY(-90vh) skew(0, -4deg) ;
-    }
-    100%{
-        position: absolute;
-        transform: translateY(0vh) skew(0, -4deg) ;
-    }
-}
-
-
-
-
-
-
-
-
-
-
 
