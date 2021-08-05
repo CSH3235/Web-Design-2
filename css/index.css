@@ -153,8 +153,8 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background: #663399;
-  -webkit-transform: skew(0, 3deg) translateY(100vh);
-          transform: skew(0, 3deg) translateY(100vh);
+  -webkit-transform: skew(0, 3deg) translateY(10vh);
+          transform: skew(0, 3deg) translateY(10vh);
   -webkit-animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
           animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
 }
@@ -162,8 +162,8 @@ a:hover {
 @-webkit-keyframes goTop_1 {
   0% {
     position: absolute;
-    -webkit-transform: translateY(100vh) skew(0, 3deg);
-            transform: translateY(100vh) skew(0, 3deg);
+    -webkit-transform: translateY(50vh) skew(0, 3deg);
+            transform: translateY(50vh) skew(0, 3deg);
   }
   100% {
     position: absolute;
@@ -175,8 +175,8 @@ a:hover {
 @keyframes goTop_1 {
   0% {
     position: absolute;
-    -webkit-transform: translateY(100vh) skew(0, 3deg);
-            transform: translateY(100vh) skew(0, 3deg);
+    -webkit-transform: translateY(50vh) skew(0, 3deg);
+            transform: translateY(50vh) skew(0, 3deg);
   }
   100% {
     position: absolute;
@@ -191,11 +191,37 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #31999c;
-  -webkit-transform: skew(0, 3deg) translateY(100vh);
-          transform: skew(0, 3deg) translateY(100vh);
-  -webkit-animation: goTop_1 0.5s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
-          animation: goTop_1 0.5s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+  background: #337499;
+  -webkit-transform: skew(0, 5deg) translateY(50vh);
+          transform: skew(0, 5deg) translateY(50vh);
+  -webkit-animation: goTop_2 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+          animation: goTop_2 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+}
+
+@-webkit-keyframes goTop_2 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(50vh) skew(0, 5deg);
+            transform: translateY(50vh) skew(0, 5deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(15vh) skew(0, 5deg);
+            transform: translateY(15vh) skew(0, 5deg);
+  }
+}
+
+@keyframes goTop_2 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(50vh) skew(0, 5deg);
+            transform: translateY(50vh) skew(0, 5deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(15vh) skew(0, 5deg);
+            transform: translateY(15vh) skew(0, 5deg);
+  }
 }
 
 body {
