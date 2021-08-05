@@ -3,15 +3,16 @@
 #button {
     display: block;
     position: absolute;
-    
+    top: 60%;
+    left: 95%;
     user-select: none;
     
-    input {
+    input:nth-child(1) {
         display: block;
         width: 5vh;
         height: 5vh;
         position: absolute;
-        top: -7px;
+        top: -3px;
         left: -5px;
         
         cursor: pointer;
@@ -21,6 +22,25 @@
         
         -webkit-touch-callout: none;
     }
+
+    input:nth-child(2) {
+        display: block;
+        width: 5vh;
+        height: 5vh;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        
+        cursor: pointer;
+        
+        opacity: 0; 
+        z-index: 2; /* on the hamburger */
+        
+        -webkit-touch-callout: none;
+    }
+
+
+
     span {
         display: block;
         margin-bottom: 5px;
