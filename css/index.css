@@ -147,14 +147,14 @@ a:hover {
 }
 
 .square_1 {
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #663399;
-  -webkit-transform: skew(0, 3deg) translateY(10vh);
-          transform: skew(0, 3deg) translateY(10vh);
+  background: #3a175c;
+  -webkit-transform: skew(0, 3deg) translateY(65vh);
+          transform: skew(0, 3deg) translateY(65vh);
   -webkit-animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
           animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
 }
@@ -162,8 +162,8 @@ a:hover {
 @-webkit-keyframes goTop_1 {
   0% {
     position: absolute;
-    -webkit-transform: translateY(50vh) skew(0, 3deg);
-            transform: translateY(50vh) skew(0, 3deg);
+    -webkit-transform: translateY(65vh) skew(0, 3deg);
+            transform: translateY(65vh) skew(0, 3deg);
   }
   100% {
     position: absolute;
@@ -175,8 +175,8 @@ a:hover {
 @keyframes goTop_1 {
   0% {
     position: absolute;
-    -webkit-transform: translateY(50vh) skew(0, 3deg);
-            transform: translateY(50vh) skew(0, 3deg);
+    -webkit-transform: translateY(65vh) skew(0, 3deg);
+            transform: translateY(65vh) skew(0, 3deg);
   }
   100% {
     position: absolute;
@@ -186,41 +186,84 @@ a:hover {
 }
 
 .square_2 {
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #337499;
-  -webkit-transform: skew(0, 5deg) translateY(50vh);
-          transform: skew(0, 5deg) translateY(50vh);
+  background: #53297e;
+  -webkit-transform: skew(0, 2deg) translateY(70vh);
+          transform: skew(0, 2deg) translateY(70vh);
   -webkit-animation: goTop_2 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
           animation: goTop_2 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+  -webkit-animation-delay: 0.02s;
+          animation-delay: 0.02s;
 }
 
 @-webkit-keyframes goTop_2 {
   0% {
     position: absolute;
-    -webkit-transform: translateY(50vh) skew(0, 5deg);
-            transform: translateY(50vh) skew(0, 5deg);
+    -webkit-transform: translateY(70vh) skew(0, 2deg);
+            transform: translateY(70vh) skew(0, 2deg);
   }
   100% {
     position: absolute;
-    -webkit-transform: translateY(15vh) skew(0, 5deg);
-            transform: translateY(15vh) skew(0, 5deg);
+    -webkit-transform: translateY(15vh) skew(0, 2deg);
+            transform: translateY(15vh) skew(0, 2deg);
   }
 }
 
 @keyframes goTop_2 {
   0% {
     position: absolute;
-    -webkit-transform: translateY(50vh) skew(0, 5deg);
-            transform: translateY(50vh) skew(0, 5deg);
+    -webkit-transform: translateY(70vh) skew(0, 2deg);
+            transform: translateY(70vh) skew(0, 2deg);
   }
   100% {
     position: absolute;
-    -webkit-transform: translateY(15vh) skew(0, 5deg);
-            transform: translateY(15vh) skew(0, 5deg);
+    -webkit-transform: translateY(15vh) skew(0, 2deg);
+            transform: translateY(15vh) skew(0, 2deg);
+  }
+}
+
+.square_3 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #743daa;
+  -webkit-transform: skew(0, -4deg) translateY(80vh);
+          transform: skew(0, -4deg) translateY(80vh);
+  -webkit-animation: goTop_3 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+          animation: goTop_3 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+  -webkit-animation-delay: 0.04s;
+          animation-delay: 0.04s;
+}
+
+@-webkit-keyframes goTop_3 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(80vh) skew(0, -4deg);
+            transform: translateY(80vh) skew(0, -4deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(20vh) skew(0, -4deg);
+            transform: translateY(20vh) skew(0, -4deg);
+  }
+}
+
+@keyframes goTop_3 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(80vh) skew(0, -4deg);
+            transform: translateY(80vh) skew(0, -4deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(20vh) skew(0, -4deg);
+            transform: translateY(20vh) skew(0, -4deg);
   }
 }
 
