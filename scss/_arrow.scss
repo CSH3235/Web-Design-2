@@ -1,19 +1,4 @@
-.container_arrow {
-    position: relative;
-    top: 600px;
-    left: 90%;
-    z-index: 9999;
-}
 
-
-.arrow_1,
-.arrow_2 {
-    width: 5vw;
-    height: 5vh;
-    transition: cubic-bezier(.86,.01,.11,1);
-    box-shadow: -2px 2px 0 rgb(255, 255, 255);
-
-}
 
 #button {
     display: block;
@@ -23,8 +8,8 @@
     
     input {
         display: block;
-        width: 40px;
-        height: 32px;
+        width: 5vh;
+        height: 5vh;
         position: absolute;
         top: -7px;
         left: -5px;
@@ -42,7 +27,7 @@
         position: relative;
 
         
-        width: 5vw;
+        width: 5vh;
         height: 5vh;
         transition: cubic-bezier(.86,.01,.11,1);
         box-shadow: -2px 2px 0 rgb(255, 255, 255)
