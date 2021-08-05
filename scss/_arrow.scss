@@ -15,6 +15,43 @@
 
 }
 
+#button {
+    display: block;
+    position: absolute;
+    
+    user-select: none;
+    
+    input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; 
+        z-index: 2; /* on the hamburger */
+        
+        -webkit-touch-callout: none;
+    }
+    span {
+        display: block;
+        margin-bottom: 5px;
+        position: relative;
+
+        
+        width: 5vw;
+        height: 5vh;
+        transition: cubic-bezier(.86,.01,.11,1);
+        box-shadow: -2px 2px 0 rgb(255, 255, 255)
+        
+
+    }
+
+    
+}
 .arrow_1 {
     transform: rotate(45deg);
 }
@@ -23,3 +60,4 @@
 .arrow_2 {
     transform: rotate(225deg);
 }
+

@@ -216,6 +216,41 @@ a:hover {
           transform: rotate(225deg);
 }
 
+#button {
+  display: block;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#button input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  /* on the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#button span {
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  width: 5vw;
+  height: 5vh;
+  -webkit-transition: cubic-bezier(0.86, 0.01, 0.11, 1);
+  transition: cubic-bezier(0.86, 0.01, 0.11, 1);
+  -webkit-box-shadow: -2px 2px 0 white;
+          box-shadow: -2px 2px 0 white;
+}
+
 body {
   background: #a1c4fd;
   margin: 0;
