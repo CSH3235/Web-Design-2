@@ -159,6 +159,32 @@ a:hover {
           animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
 }
 
+@-webkit-keyframes goTop_1 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(65vh) skew(0, 3deg);
+            transform: translateY(65vh) skew(0, 3deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(10vh) skew(0, 3deg);
+            transform: translateY(10vh) skew(0, 3deg);
+  }
+}
+
+@keyframes goTop_1 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(65vh) skew(0, 3deg);
+            transform: translateY(65vh) skew(0, 3deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(10vh) skew(0, 3deg);
+            transform: translateY(10vh) skew(0, 3deg);
+  }
+}
+
 .square_2 {
   position: absolute;
   margin: 0;
@@ -174,6 +200,32 @@ a:hover {
           animation-delay: 0.02s;
 }
 
+@-webkit-keyframes goTop_2 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(70vh) skew(0, 2deg);
+            transform: translateY(70vh) skew(0, 2deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(15vh) skew(0, 2deg);
+            transform: translateY(15vh) skew(0, 2deg);
+  }
+}
+
+@keyframes goTop_2 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(70vh) skew(0, 2deg);
+            transform: translateY(70vh) skew(0, 2deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(15vh) skew(0, 2deg);
+            transform: translateY(15vh) skew(0, 2deg);
+  }
+}
+
 .square_3 {
   position: absolute;
   margin: 0;
@@ -187,6 +239,32 @@ a:hover {
           animation: goTop_3 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
   -webkit-animation-delay: 0.04s;
           animation-delay: 0.04s;
+}
+
+@-webkit-keyframes goTop_3 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(40vh) skew(0, -4deg);
+            transform: translateY(40vh) skew(0, -4deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(-50vh) skew(0, -4deg);
+            transform: translateY(-50vh) skew(0, -4deg);
+  }
+}
+
+@keyframes goTop_3 {
+  0% {
+    position: absolute;
+    -webkit-transform: translateY(40vh) skew(0, -4deg);
+            transform: translateY(40vh) skew(0, -4deg);
+  }
+  100% {
+    position: absolute;
+    -webkit-transform: translateY(-50vh) skew(0, -4deg);
+            transform: translateY(-50vh) skew(0, -4deg);
+  }
 }
 
 .btn-container {
