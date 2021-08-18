@@ -271,6 +271,7 @@ a:hover {
   position: absolute;
   top: 50%;
   right: 10%;
+  z-index: 999;
 }
 
 body {

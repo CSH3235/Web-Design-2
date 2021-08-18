@@ -6,9 +6,11 @@
     width: 100vw;
     height: 100vh;
     background: #3a175c;
+}
+
+.square_1_ani {
     transform: skew(0, 3deg) translateY(65vh);
     animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-
 }
 
 
@@ -60,9 +62,6 @@
     animation-delay: 0.04s;
 
 }
-
-
-
 
 
 @keyframes goTop_3 {
