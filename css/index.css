@@ -153,6 +153,9 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background: #3a175c;
+}
+
+.square_1.current {
   -webkit-transform: skew(0, 3deg) translateY(65vh);
           transform: skew(0, 3deg) translateY(65vh);
   -webkit-animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
