@@ -6,12 +6,9 @@
     width: 100vw;
     height: 100vh;
     background: #3a175c;
+    transform: skew(0, 3deg) translateY(65vh);
+    animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
 
-
-    &.current {
-        transform: skew(0, 3deg) translateY(65vh);
-        animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    }
 }
 
 
@@ -59,11 +56,10 @@
     height: 1000vh;
     background: #743daa;
 
-    &.current {
-        transform: skew(0, -4deg) translateY(40vh);
-        animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-        animation-delay: 0.04s;
-    }
+    transform: skew(0, -4deg) translateY(40vh);
+    animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation-delay: 0.04s;
+
 }
 
 
