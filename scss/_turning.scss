@@ -1,4 +1,4 @@
-.square_1 {
+#square_1 {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@
     }
 }
 
-.square_2 {
+#square_2 {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@
     }
 }
 
-.square_3 {
+#square_3 {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -57,6 +57,8 @@
     transform: skew(0, -4deg) translateY(40vh);
     animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     animation-delay: 0.04s;
+
+
 
 }
 
