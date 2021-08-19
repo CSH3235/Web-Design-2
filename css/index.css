@@ -233,9 +233,6 @@ a:hover {
   width: 1000vw;
   height: 1000vh;
   background: #743daa;
-}
-
-.active {
   -webkit-transform: skew(0, -4deg) translateY(40vh);
           transform: skew(0, -4deg) translateY(40vh);
   -webkit-animation: goTop_3 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
