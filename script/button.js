@@ -4,7 +4,11 @@ window.onload = function() {
     let square_3 = document.getElementById("square_3");
 
     let square_4 = document.getElementById("square_4");
-    // square_4.style.opacity = 0;
+    let square_5 = document.getElementById("square_5");
+    let square_6 = document.getElementById("square_6");
+    square_4.classList.remove("square_4_ani_re");
+    square_5.classList.remove("square_5_ani_re");
+    square_6.classList.remove("square_6_ani_re");
 
     let NextBtn = document.getElementById("nextBtn");
 
@@ -34,11 +38,22 @@ window.onload = function() {
 
             setTimeout(function(){
                 // 2번째 스타일 실행
+                e.preventDefault;
+
+                square_4.classList.remove("square_4_ani_re");
+                square_5.classList.remove("square_5_ani_re");
+                square_6.classList.remove("square_6_ani_re");
+                void square_4.offsetWidth;
+                void square_5.offsetWidth;
+                void square_6.offsetWidth;
+                square_4.classList.add("square_4_ani_re");
+                square_5.classList.add("square_5_ani_re");
+                square_6.classList.add("square_6_ani_re");
             }, 1000)
         }
 
         else if (ClickCount === 1) {
-            alert("CSH")
+            alert("CSH babo")
         }
 
     }, false);

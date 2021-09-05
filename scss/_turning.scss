@@ -109,7 +109,7 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: #fff;
+    background: #0D1321;
     transform: skew(0, 3deg);
 }
 
@@ -133,13 +133,87 @@
     }
 }
 
-@keyframes goTop_4 {
-    0%{
-        transform: translateY(0)  skew(0, 3deg);
+// @keyframes goTop_4 {
+//     0%{
+//         transform: translateY(0)  skew(0, 3deg);
     
+//     }
+//     100%{
+//         transform: translateY(-50vh)  skew(0, 3deg);
+
+//     }
+// }
+
+
+
+#square_5 {
+    position: absolute;
+    top: 140%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1D2D44;
+    // transform: skew(0, 2deg) translateY(70vh);
+    // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    // animation-delay: 0.02s;
+    transform: skew(0, 2deg);
+
+}
+
+.square_5_ani_re {
+    animation: square_5_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation-delay: 0.04s;
+}
+
+// .square_6_ani {
+//     animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+//     animation-delay: 0.02s;
+// }
+
+@keyframes square_5_ani_re {
+    0%{
+        transform: translateY(0)  skew(0, 2deg);
+        
     }
     100%{
-        transform: translateY(-50vh)  skew(0, 3deg);
+        transform: translateY(-65vh) skew(0, 2deg) ;
+        
+    }
+}
 
+
+#square_6 {
+    position: absolute;
+    top: 140%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #3E5C77;
+    // transform: skew(0, 2deg) translateY(70vh);
+    // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    // animation-delay: 0.02s;
+    transform:  skew(0, -4deg);
+}
+
+.square_6_ani_re {
+    animation: square_6_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation-delay: 0.08s;
+}
+
+// .square_6_ani {
+//     animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+//     animation-delay: 0.02s;
+// }
+
+@keyframes square_6_ani_re {
+    0%{
+        transform: translateY(0)  skew(0, -4deg);
+        
+    }
+    100%{
+        transform: translateY(-55vh) skew(0, -4deg);
+        
     }
 }
