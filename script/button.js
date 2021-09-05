@@ -6,9 +6,14 @@ window.onload = function() {
     let square_4 = document.getElementById("square_4");
     let square_5 = document.getElementById("square_5");
     let square_6 = document.getElementById("square_6");
+
     square_4.classList.remove("square_4_ani_re");
     square_5.classList.remove("square_5_ani_re");
     square_6.classList.remove("square_6_ani_re");
+
+    square_4.classList.remove("square_4_ani");
+    square_5.classList.remove("square_5_ani");
+    square_6.classList.remove("square_6_ani");
 
     let NextBtn = document.getElementById("nextBtn");
 
@@ -37,15 +42,19 @@ window.onload = function() {
             ClickCount += 1;
 
             setTimeout(function(){
-                // 2번째 스타일 실행
                 e.preventDefault;
+                square_4.classList.remove("square_4_ani");
+                square_5.classList.remove("square_5_ani");
+                square_6.classList.remove("square_6_ani");
 
                 square_4.classList.remove("square_4_ani_re");
                 square_5.classList.remove("square_5_ani_re");
                 square_6.classList.remove("square_6_ani_re");
+
                 void square_4.offsetWidth;
                 void square_5.offsetWidth;
                 void square_6.offsetWidth;
+
                 square_4.classList.add("square_4_ani_re");
                 square_5.classList.add("square_5_ani_re");
                 square_6.classList.add("square_6_ani_re");
@@ -53,7 +62,21 @@ window.onload = function() {
         }
 
         else if (ClickCount === 1) {
-            alert("CSH babo")
+            e.preventDefault;
+            square_4.classList.remove("square_4_ani_re");
+            square_5.classList.remove("square_5_ani_re");
+            square_6.classList.remove("square_6_ani_re");
+
+            square_4.classList.remove("square_4_ani");
+            square_5.classList.remove("square_5_ani");
+            square_6.classList.remove("square_6_ani");
+            void square_4.offsetWidth;
+            void square_5.offsetWidth;
+            void square_6.offsetWidth;
+
+            square_4.classList.add("square_4_ani");
+            square_5.classList.add("square_5_ani");
+            square_6.classList.add("square_6_ani");
         }
 
     }, false);

@@ -114,15 +114,15 @@
 }
 
 .square_4_ani_re {
-    animation: goTop_4_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation: square_4_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
 }
 
-// .square_4_ani {
-//     animation: goTop_4 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-// }
+.square_4_ani {
+    animation: square_4_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+}
 
 
-@keyframes goTop_4_re {
+@keyframes square_4_ani_re {
     0%{
         transform: translateY(0)  skew(0, 3deg);
         
@@ -133,16 +133,16 @@
     }
 }
 
-// @keyframes goTop_4 {
-//     0%{
-//         transform: translateY(0)  skew(0, 3deg);
+@keyframes square_4_ani {
+    0%{
+        transform: translateY(0)  skew(0, 3deg);
     
-//     }
-//     100%{
-//         transform: translateY(-50vh)  skew(0, 3deg);
+    }
+    100%{
+        transform: translateY(-50vh)  skew(0, 3deg);
 
-//     }
-// }
+    }
+}
 
 
 
