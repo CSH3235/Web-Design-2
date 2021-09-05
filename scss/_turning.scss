@@ -1,74 +1,96 @@
 #square_1 {
     position: absolute;
+    top: 70%;
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     background: #3a175c;
-    transform: skew(0, 3deg) translateY(65vh);
+    transform: skew(0, 3deg);
+    // transform: skew(0, 3deg) translateY(65vh);
+    // animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+
+}
+
+
+.square_1_ani {
     animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
 
 }
 
-
 @keyframes goTop_1 {
     0%{
-        position: absolute;
-        transform: translateY(65vh)  skew(0, 3deg);
+        transform: translateY(0)  skew(0, 3deg);
+    
     }
     100%{
-        position: absolute;
-        transform: translateY(10vh)  skew(0, 3deg);
+        transform: translateY(-50vh)  skew(0, 3deg);
+
     }
 }
 
+
+
+
+
+
 #square_2 {
     position: absolute;
+    top: 75%;
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     background: #53297e;
-    transform: skew(0, 2deg) translateY(70vh);
+    // transform: skew(0, 2deg) translateY(70vh);
+    // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    // animation-delay: 0.02s;
+    transform: skew(0, 2deg);
+
+}
+
+
+.square_2_ani {
     animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     animation-delay: 0.02s;
 }
 
 
-
 @keyframes goTop_2 {
     0%{
-        position: absolute;
-        transform: translateY(70vh) skew(0, 2deg) ;
+        transform: translateY(0) skew(0, 2deg) ;
     }
     100%{
-        position: absolute;
-        transform: translateY(15vh) skew(0, 2deg) ;
+        transform: translateY(-70vh) skew(0, 2deg) ;
     }
 }
 
 #square_3 {
     position: absolute;
+    top: 85%;
     margin: 0;
     padding: 0;
-    width: 1000vw;
+    width: 100vw;
     height: 1000vh;
     background: #743daa;
-    transform: skew(0, -4deg) translateY(40vh);
-    animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    animation-delay: 0.04s;
+    // transform: skew(0, -4deg) translateY(40vh);
+    // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    // animation-delay: 0.04s;
+    transform: skew(0, -4deg);
+
 
 }
 
-
+.square_3_ani {
+    animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation-delay: 0.04s;
+}
 
 @keyframes goTop_3 {
     0%{
-        position: absolute;
-        transform: translateY(40vh) skew(0, -4deg) ;
+        transform: translateY(0) skew(0, -4deg) ;
     }
     100%{
-        position: absolute;
-        transform: translateY(-50vh) skew(0, -4deg) ;
+        transform: translateY(-100vh) skew(0, -4deg) ;
     }
 }
