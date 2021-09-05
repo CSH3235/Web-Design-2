@@ -4,7 +4,7 @@ window.onload = function() {
     let square_3 = document.getElementById("square_3");
 
     let square_4 = document.getElementById("square_4");
-    square_4.style.opacity = 0;
+    // square_4.style.opacity = 0;
 
     let NextBtn = document.getElementById("nextBtn");
 

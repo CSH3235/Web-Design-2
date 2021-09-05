@@ -269,7 +269,7 @@ a:hover {
 
 #square_4 {
   position: absolute;
-  top: 70%;
+  top: 140%;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -277,6 +277,55 @@ a:hover {
   background: #fff;
   -webkit-transform: skew(0, 3deg);
           transform: skew(0, 3deg);
+}
+
+.square_4_ani_re {
+  -webkit-animation: goTop_4_re 1.3s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+          animation: goTop_4_re 1.3s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+}
+
+@-webkit-keyframes goTop_4_re {
+  0% {
+    -webkit-transform: translateY(0) skew(0, 3deg);
+            transform: translateY(0) skew(0, 3deg);
+  }
+  100% {
+    -webkit-transform: translateY(-70vh) skew(0, 3deg);
+            transform: translateY(-70vh) skew(0, 3deg);
+  }
+}
+
+@keyframes goTop_4_re {
+  0% {
+    -webkit-transform: translateY(0) skew(0, 3deg);
+            transform: translateY(0) skew(0, 3deg);
+  }
+  100% {
+    -webkit-transform: translateY(-70vh) skew(0, 3deg);
+            transform: translateY(-70vh) skew(0, 3deg);
+  }
+}
+
+@-webkit-keyframes goTop_4 {
+  0% {
+    -webkit-transform: translateY(0) skew(0, 3deg);
+            transform: translateY(0) skew(0, 3deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50vh) skew(0, 3deg);
+            transform: translateY(-50vh) skew(0, 3deg);
+  }
+}
+
+@keyframes goTop_4 {
+  0% {
+    -webkit-transform: translateY(0) skew(0, 3deg);
+            transform: translateY(0) skew(0, 3deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50vh) skew(0, 3deg);
+            transform: translateY(-50vh) skew(0, 3deg);
+  }
 }
 
 .btn-container {
