@@ -58,7 +58,7 @@ window.onload = function() {
                 square_4.classList.add("square_4_ani_re");
                 square_5.classList.add("square_5_ani_re");
                 square_6.classList.add("square_6_ani_re");
-            }, 1000)
+            }, 500)
         }
 
         else if (ClickCount === 1) {

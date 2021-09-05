@@ -135,12 +135,11 @@
 
 @keyframes square_4_ani {
     0%{
-        transform: translateY(0)  skew(0, 3deg);
+        transform: translateY(-70vh)  skew(0, 3deg);
     
     }
     100%{
-        transform: translateY(-50vh)  skew(0, 3deg);
-
+        transform: translateY(-130vh)  skew(0, 3deg);
     }
 }
 
@@ -166,10 +165,12 @@
     animation-delay: 0.04s;
 }
 
-// .square_6_ani {
-//     animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-//     animation-delay: 0.02s;
-// }
+.square_5_ani {
+    animation: square_5_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation-delay: 0.04s;
+}
+
+
 
 @keyframes square_5_ani_re {
     0%{
@@ -182,6 +183,19 @@
     }
 }
 
+@keyframes square_5_ani {
+    0%{
+        transform: translateY(-65vh)  skew(0, 2deg) ;
+    
+    }
+    100%{
+        transform: translateY(-130vh)  skew(0, 2deg) ;
+    }
+}
+
+
+
+
 
 #square_6 {
     position: absolute;
@@ -189,7 +203,7 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: 1000vh;
     background: #3E5C77;
     // transform: skew(0, 2deg) translateY(70vh);
     // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
@@ -202,18 +216,32 @@
     animation-delay: 0.08s;
 }
 
-// .square_6_ani {
-//     animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-//     animation-delay: 0.02s;
-// }
+.square_6_ani {
+    animation: square_6_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    animation-delay: 0.08s;
+}
+
+
 
 @keyframes square_6_ani_re {
     0%{
         transform: translateY(0)  skew(0, -4deg);
-
+        
     }
     100%{
         transform: translateY(-55vh) skew(0, -4deg);
         
     }
 }
+
+@keyframes square_6_ani {
+    0%{
+        transform: translateY(-55vh)  skew(0, -4deg);
+    
+    }
+    100%{
+        transform: translateY(-150vh) skew(0, -4deg);
+    }
+}
+
+
