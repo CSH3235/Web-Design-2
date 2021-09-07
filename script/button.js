@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload=function() {
     let sp1 = document.getElementById("SP1");
     let sp2 = document.getElementById("SP2");
     

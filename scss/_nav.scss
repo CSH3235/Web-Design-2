@@ -1,10 +1,12 @@
 
 nav {
+
     position: absolute;
     width: 100vw;
     height: 100vh;
     background: #fff;
     transition: opacity 0.55s ease;
+    z-index: 0;
 
     ul {
         position: absolute;
@@ -31,3 +33,4 @@ nav {
     }
     opacity: 0;
 }
+
