@@ -2,7 +2,6 @@ window.onload=function() {
     let sp1 = document.getElementById("SP1");
     let sp2 = document.getElementById("SP2");
     
-    
     sp2.classList.remove("square_part_2_container_re");
     sp2.classList.remove("square_part_2_container");
     
