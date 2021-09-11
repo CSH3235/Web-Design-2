@@ -2,6 +2,10 @@ window.onload=function() {
     let sp1 = document.getElementById("SP1");
     let sp2 = document.getElementById("SP2");
     let sp3 = document.getElementById("SP3");
+
+    let spz1 = document.getElementsByClassName("square_part_1_container")
+
+    sp1.classList.remove("square_part_1_container_re");
     sp1.classList.remove("square_part_1_container");
 
     sp2.classList.remove("square_part_2_container_re");
@@ -50,10 +54,12 @@ window.onload=function() {
             sp3.classList.remove("square_part_3_container");
             void sp3.offsetWidth;
             sp3.classList.add("square_part_3_container");
-            sp1.classList.remove("square_part_1_container");
-        
+            
+            spz1.style.zIndex = "99";
+            
             setTimeout(function(){
                 e.preventDefault;
+                sp1.classList.remove("square_part_1_container");
                 sp1.classList.remove("square_part_1_container_re");
                 void sp1.offsetWidth;
                 sp1.classList.add("square_part_1_container_re");

@@ -1,3 +1,18 @@
+.square_part_1_container_re {
+    #square_1 {
+        animation: square_1_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    }
+    #square_2 {
+        animation: square_2_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    }
+    // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    #square_3 {
+        animation: square_3_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    }
+    z-index: 1;
+}
+
+
 .square_part_1_container {
     #square_1 {
         animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
@@ -9,6 +24,7 @@
     #square_3 {
         animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
+    z-index: 1;
 }
 
 
@@ -43,7 +59,6 @@
     // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     // animation-delay: 0.02s;
     transform: skew(0, 2deg);
-    
 }
 
 
@@ -97,6 +112,36 @@
 
 
 
+@keyframes square_1_ani {
+    0%{
+    transform: translateY(-70vh)  skew(0, 3deg);
+
+}
+100%{
+        transform: translateY(-130vh)  skew(0, 3deg);
+    }
+}
+
+
+@keyframes square_2_ani {
+    0%{
+        transform: translateY(-65vh)  skew(0, 2deg) ;
+        
+    }
+    100%{
+        transform: translateY(-130vh)  skew(0, 2deg) ;
+    }
+}
+
+@keyframes square_3_ani {
+0%{
+    transform: translateY(-55vh)  skew(0, -4deg);
+
+}
+100%{
+    transform: translateY(-150vh) skew(0, -4deg);
+}
+}
 
 
 /////////////////////////////////////////////////////////////////////////
