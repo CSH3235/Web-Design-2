@@ -36,6 +36,9 @@ window.onload=function() {
             sp3.classList.remove("square_part_3_container");
             sp3.classList.remove("square_part_3_container_re");
             ClickCount += 1;
+
+            NextBtn.disabled = true;
+
             setTimeout(function(){
                 for(let i = 1; i < node1.length; i += 2) {
                     node1[i].style.zIndex = 0;
@@ -43,42 +46,66 @@ window.onload=function() {
                 e.preventDefault;
                 void sp2.offsetWidth;
                 sp2.classList.add("square_part_2_container_re");
-            }, 100)
+            }, 100);
+
+            setTimeout(function(){
+                if(NextBtn.disabled === true) {
+                    NextBtn.disabled = false;
+                }
+            }, 1300);
         }
         
         else if (ClickCount === 1) {
             e.preventDefault;
-
             sp2.classList.remove("square_part_2_container_re");
             sp2.classList.remove("square_part_2_container");
+
             void sp2.offsetWidth;
+
             sp2.classList.add("square_part_2_container");
             ClickCount += 1;
+            NextBtn.disabled = true;
+
             setTimeout(function(){
                 e.preventDefault;
                 void sp3.offsetWidth;
                 sp3.classList.add("square_part_3_container_re");
             }, 100)
+            setTimeout(function(){
+                if(NextBtn.disabled === true) {
+                    NextBtn.disabled = false;
+                }
+            }, 1300);
         }
-
+        
         else if (ClickCount === 2) {
+
             e.preventDefault;
             sp3.classList.remove("square_part_3_container_re");
             sp3.classList.remove("square_part_3_container");
+
             void sp3.offsetWidth;
+
             sp3.classList.add("square_part_3_container");
 
+            NextBtn.disabled = true;
             setTimeout(function(){
                 e.preventDefault;
                 sp1.classList.remove("square_part_1_container");
                 sp1.classList.remove("square_part_1_container_re");
                 void sp1.offsetWidth;
                 sp1.classList.add("square_part_1_container_re");
+
                 for(let i = 1; i < node1.length; i += 2) {
                     node1[i].style.zIndex = 99;
                 }
                 ClickCount = 0;
             }, 100)
+            setTimeout(function(){
+                if(NextBtn.disabled === true) {
+                    NextBtn.disabled = false;
+                }
+            }, 1300);
         
         }
     }, false);
