@@ -580,7 +580,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #4e0e0e;
+  background: #4377cc;
   -webkit-transform: skew(0, 3deg);
           transform: skew(0, 3deg);
 }
@@ -592,7 +592,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #811919;
+  background: #7098da;
   -webkit-transform: skew(0, 2deg);
           transform: skew(0, 2deg);
 }
@@ -604,7 +604,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 1000vh;
-  background: #e73d3d;
+  background: #A1C4FD;
   -webkit-transform: skew(0, -4deg);
           transform: skew(0, -4deg);
 }
