@@ -1,15 +1,14 @@
 .square_part_1_container_re {
     #square_1 {
-        animation: square_1_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_1_ani_re 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
     #square_2 {
-        animation: square_2_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_2_ani_re 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
     // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     #square_3 {
-        animation: square_3_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_3_ani_re 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
-    z-index: 1;
 }
 
 
@@ -24,14 +23,13 @@
     #square_3 {
         animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
-    z-index: 1;
 }
 
 
 
 #square_1 {
     position: absolute;
-    top: 70%;
+    top: 140%;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -49,7 +47,7 @@
 
 #square_2 {
     position: absolute;
-    top: 75%;
+    top: 140%;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -64,7 +62,7 @@
 
 #square_3 {
     position: absolute;
-    top: 85%;
+    top: 140%;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -80,50 +78,18 @@
 
 @keyframes goTop_1 {
     0%{
-        transform: translateY(0)  skew(0, 3deg);
-    
-    }
-    100%{
-        transform: translateY(-50vh)  skew(0, 3deg);
+        transform: translateY(-70vh)  skew(0, 3deg);
 
     }
+    100%{
+            transform: translateY(-130vh)  skew(0, 3deg);
+        }
 }
 
 
 
 @keyframes goTop_2 {
 
-    3%{
-        transform: translateY(0) skew(0, 2deg) ;
-    }
-    100%{
-        transform: translateY(-70vh) skew(0, 2deg) ;
-    }
-}
-
-@keyframes goTop_3 {
-    0%{
-        transform: translateY(0) skew(0, -4deg) ;
-    }
-    100%{
-        transform: translateY(-100vh) skew(0, -4deg) ;
-    }
-}
-
-
-
-@keyframes square_1_ani {
-    0%{
-    transform: translateY(-70vh)  skew(0, 3deg);
-
-}
-100%{
-        transform: translateY(-130vh)  skew(0, 3deg);
-    }
-}
-
-
-@keyframes square_2_ani {
     0%{
         transform: translateY(-65vh)  skew(0, 2deg) ;
         
@@ -133,14 +99,50 @@
     }
 }
 
-@keyframes square_3_ani {
-0%{
-    transform: translateY(-55vh)  skew(0, -4deg);
+@keyframes goTop_3 {
+    0%{
+        transform: translateY(-55vh)  skew(0, -4deg);
+    
+    }
+    100%{
+        transform: translateY(-150vh) skew(0, -4deg);
+    }
+}
 
+
+
+@keyframes square_1_ani_re {
+    10%{
+        transform: translateY(0)  skew(0, 3deg);
+        
+    }
+    100%{
+        transform: translateY(-70vh)  skew(0, 3deg);
+        
+    }
 }
-100%{
-    transform: translateY(-150vh) skew(0, -4deg);
+
+
+@keyframes square_2_ani_re {
+    20%{
+        transform: translateY(0)  skew(0, 2deg);
+        
+    }
+    100%{
+        transform: translateY(-65vh) skew(0, 2deg) ;
+        
+    }
 }
+
+@keyframes square_3_ani_re {
+    30%{
+        transform: translateY(0)  skew(0, -4deg);
+        
+    }
+    100%{
+        transform: translateY(-55vh) skew(0, -4deg);
+        
+    }
 }
 
 
