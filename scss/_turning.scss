@@ -1,30 +1,30 @@
-.square_part_1_container_re {
-    #square_1 {
-        animation: square_1_ani_re 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    }
-    #square_2 {
-        animation: square_2_ani_re 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    }
-    // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    #square_3 {
-        animation: square_3_ani_re 1s cubic-bezier(.82,-0.19,.33,1.19) both;
-    }
-}
 
 
 .square_part_1_container {
     #square_1 {
-        animation: square_1_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_1_ani 1s cubic-bezier(1,-0.14,.25,.99) both;
     }
     #square_2 {
-        animation: square_2_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_2_ani 1s cubic-bezier(1,-0.14,.25,.99) both;
     }
     // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     #square_3 {
-        animation: square_3_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_3_ani 1s cubic-bezier(1,-0.14,.25,.99) both;
     }
 }
 
+.square_part_1_container_re {
+    #square_1 {
+        animation: square_1_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
+    }
+    #square_2 {
+        animation: square_2_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
+    }
+    // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+    #square_3 {
+        animation: square_3_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
+    }
+}
 
 
 #square_1 {
@@ -161,13 +161,13 @@
 }
 .square_part_2_container_re {
     #square_4 {
-        animation: square_4_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_4_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
     }
     #square_5 {
-        animation: square_5_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_5_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
         }
     #square_6 {
-        animation: square_6_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_6_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
     }
 }
 
@@ -234,46 +234,48 @@
 }
 
 
+@keyframes square_5_ani_re {
+    20%{
+        transform: translateY(0)  skew(0, 2deg);
+        
+    }
+    100%{
+        transform: translateY(-65vh) skew(0, 2deg) ;
+        
+    }
+}
+
+
+@keyframes square_6_ani_re {
+    30%{
+        transform: translateY(0)  skew(0, -4deg);
+        
+    }
+    100%{
+        transform: translateY(-55vh) skew(0, -4deg);
+        
+    }
+}
+
 @keyframes square_4_ani {
-        0%{
+    0%{
         transform: translateY(-70vh)  skew(0, 3deg);
 
     }
     100%{
-            transform: translateY(-130vh)  skew(0, 3deg);
-        }
+        transform: translateY(-130vh)  skew(0, 3deg);
     }
-    
-    @keyframes square_5_ani_re {
-        20%{
-            transform: translateY(0)  skew(0, 2deg);
-            
-        }
-        100%{
-            transform: translateY(-65vh) skew(0, 2deg) ;
-            
-        }
+}
+@keyframes square_5_ani {
+    0%{
+        transform: translateY(-65vh)  skew(0, 2deg) ;
+        
     }
-    @keyframes square_5_ani {
-        0%{
-            transform: translateY(-65vh)  skew(0, 2deg) ;
-            
-        }
-        100%{
-            transform: translateY(-130vh)  skew(0, 2deg) ;
-        }
+    100%{
+        transform: translateY(-130vh)  skew(0, 2deg) ;
     }
+}
 
-    @keyframes square_6_ani_re {
-        30%{
-            transform: translateY(0)  skew(0, -4deg);
-            
-        }
-        100%{
-            transform: translateY(-55vh) skew(0, -4deg);
-            
-        }
-    }
 @keyframes square_6_ani {
     0%{
         transform: translateY(-55vh)  skew(0, -4deg);
@@ -301,13 +303,13 @@
 }
 .square_part_3_container_re {
     #square_7 {
-        animation: square_4_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_4_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
     }
     #square_8 {
-        animation: square_5_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_5_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
         }
     #square_9 {
-        animation: square_6_ani_re 1.3s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_6_ani_re 1.3s cubic-bezier(.89,.02,.17,1.01) both;
     }
 }
 
@@ -374,6 +376,28 @@
     }
 }
 
+@keyframes square_8_ani_re {
+    20%{
+        transform: translateY(0)  skew(0, 2deg);
+        
+    }
+    100%{
+        transform: translateY(-65vh) skew(0, 2deg) ;
+        
+    }
+}
+
+
+@keyframes square_9_ani_re {
+    30%{
+        transform: translateY(0)  skew(0, -4deg);
+        
+    }
+    100%{
+        transform: translateY(-55vh) skew(0, -4deg);
+        
+    }
+}
 
 @keyframes square_7_ani {
         0%{
@@ -385,36 +409,16 @@
         }
     }
     
-    @keyframes square_8_ani_re {
-        20%{
-            transform: translateY(0)  skew(0, 2deg);
-            
-        }
-        100%{
-            transform: translateY(-65vh) skew(0, 2deg) ;
-            
-        }
+@keyframes square_8_ani {
+    0%{
+        transform: translateY(-65vh)  skew(0, 2deg) ;
+        
     }
-    @keyframes square_8_ani {
-        0%{
-            transform: translateY(-65vh)  skew(0, 2deg) ;
-            
-        }
-        100%{
-            transform: translateY(-130vh)  skew(0, 2deg) ;
-        }
+    100%{
+        transform: translateY(-130vh)  skew(0, 2deg) ;
     }
+}
 
-    @keyframes square_9_ani_re {
-        30%{
-            transform: translateY(0)  skew(0, -4deg);
-            
-        }
-        100%{
-            transform: translateY(-55vh) skew(0, -4deg);
-            
-        }
-    }
 @keyframes square_9_ani {
     0%{
         transform: translateY(-55vh)  skew(0, -4deg);
