@@ -163,18 +163,18 @@ a:hover {
 }
 
 .square_part_1_container #square_1 {
-  -webkit-animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
-          animation: goTop_1 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+  -webkit-animation: square_1_ani 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+          animation: square_1_ani 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
 }
 
 .square_part_1_container #square_2 {
-  -webkit-animation: goTop_2 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
-          animation: goTop_2 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+  -webkit-animation: square_2_ani 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+          animation: square_2_ani 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
 }
 
 .square_part_1_container #square_3 {
-  -webkit-animation: goTop_3 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
-          animation: goTop_3 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+  -webkit-animation: square_3_ani 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
+          animation: square_3_ani 1s cubic-bezier(0.82, -0.19, 0.33, 1.19) both;
 }
 
 #square_1 {
@@ -184,7 +184,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #3a175c;
+  background: #10b34f;
   -webkit-transform: skew(0, 3deg);
           transform: skew(0, 3deg);
 }
@@ -196,7 +196,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #53297e;
+  background: #25d368;
   -webkit-transform: skew(0, 2deg);
           transform: skew(0, 2deg);
 }
@@ -208,12 +208,12 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 1000vh;
-  background: #743daa;
+  background: #57ff97;
   -webkit-transform: skew(0, -4deg);
           transform: skew(0, -4deg);
 }
 
-@-webkit-keyframes goTop_1 {
+@-webkit-keyframes square_1_ani {
   0% {
     -webkit-transform: translateY(-70vh) skew(0, 3deg);
             transform: translateY(-70vh) skew(0, 3deg);
@@ -224,7 +224,7 @@ a:hover {
   }
 }
 
-@keyframes goTop_1 {
+@keyframes square_1_ani {
   0% {
     -webkit-transform: translateY(-70vh) skew(0, 3deg);
             transform: translateY(-70vh) skew(0, 3deg);
@@ -235,7 +235,7 @@ a:hover {
   }
 }
 
-@-webkit-keyframes goTop_2 {
+@-webkit-keyframes square_2_ani {
   0% {
     -webkit-transform: translateY(-65vh) skew(0, 2deg);
             transform: translateY(-65vh) skew(0, 2deg);
@@ -246,7 +246,7 @@ a:hover {
   }
 }
 
-@keyframes goTop_2 {
+@keyframes square_2_ani {
   0% {
     -webkit-transform: translateY(-65vh) skew(0, 2deg);
             transform: translateY(-65vh) skew(0, 2deg);
@@ -257,7 +257,7 @@ a:hover {
   }
 }
 
-@-webkit-keyframes goTop_3 {
+@-webkit-keyframes square_3_ani {
   0% {
     -webkit-transform: translateY(-55vh) skew(0, -4deg);
             transform: translateY(-55vh) skew(0, -4deg);
@@ -268,7 +268,7 @@ a:hover {
   }
 }
 
-@keyframes goTop_3 {
+@keyframes square_3_ani {
   0% {
     -webkit-transform: translateY(-55vh) skew(0, -4deg);
             transform: translateY(-55vh) skew(0, -4deg);
@@ -382,7 +382,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #0D1321;
+  background: #c52323;
   -webkit-transform: skew(0, 3deg);
           transform: skew(0, 3deg);
 }
@@ -394,7 +394,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: #1D2D44;
+  background: #eb4343;
   -webkit-transform: skew(0, 2deg);
           transform: skew(0, 2deg);
 }
@@ -406,7 +406,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   height: 1000vh;
-  background: #3E5C77;
+  background: #f76161;
   -webkit-transform: skew(0, -4deg);
           transform: skew(0, -4deg);
 }

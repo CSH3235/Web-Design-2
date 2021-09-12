@@ -14,14 +14,14 @@
 
 .square_part_1_container {
     #square_1 {
-        animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_1_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
     #square_2 {
-        animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_2_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
     // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     #square_3 {
-        animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
+        animation: square_3_ani 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     }
 }
 
@@ -34,7 +34,7 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: #3a175c;
+    background: #10b34f;
     transform: skew(0, 3deg);
     // transform: skew(0, 3deg) translateY(65vh);
     // animation: goTop_1 1s cubic-bezier(.82,-0.19,.33,1.19) both;
@@ -52,7 +52,7 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: #53297e;
+    background: #25d368;
     // transform: skew(0, 2deg) translateY(70vh);
     // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     // animation-delay: 0.02s;
@@ -67,7 +67,7 @@
     padding: 0;
     width: 100vw;
     height: 1000vh;
-    background: #743daa;
+    background: #57ff97;
     // transform: skew(0, -4deg) translateY(40vh);
     // animation: goTop_3 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     // animation-delay: 0.04s;
@@ -76,7 +76,7 @@
 
 }
 
-@keyframes goTop_1 {
+@keyframes square_1_ani {
     0%{
         transform: translateY(-70vh)  skew(0, 3deg);
 
@@ -88,7 +88,7 @@
 
 
 
-@keyframes goTop_2 {
+@keyframes square_2_ani {
 
     0%{
         transform: translateY(-65vh)  skew(0, 2deg) ;
@@ -99,7 +99,7 @@
     }
 }
 
-@keyframes goTop_3 {
+@keyframes square_3_ani {
     0%{
         transform: translateY(-55vh)  skew(0, -4deg);
     
@@ -180,7 +180,7 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: #0D1321;
+    background: #c52323;
     transform: skew(0, 3deg);
 }
 
@@ -194,7 +194,7 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: #1D2D44;
+    background: #eb4343;
     // transform: skew(0, 2deg) translateY(70vh);
     // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     // animation-delay: 0.02s;
@@ -212,7 +212,7 @@
     padding: 0;
     width: 100vw;
     height: 1000vh;
-    background: #3E5C77;
+    background: #f76161;
     // transform: skew(0, 2deg) translateY(70vh);
     // animation: goTop_2 1s cubic-bezier(.82,-0.19,.33,1.19) both;
     // animation-delay: 0.02s;
