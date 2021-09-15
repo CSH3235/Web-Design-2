@@ -4,3 +4,13 @@
     right: 10%;
     z-index: 100;
 }
+
+.button:hover, 
+.button:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+}
