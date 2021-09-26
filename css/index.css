@@ -760,46 +760,228 @@ a:hover {
   background: aqua;
 }
 
-.blob_1 {
-  position: relative;
-  top: 20px;
-  width: 50px;
-  height: 50px;
-  background: #7c93f8;
-  border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
-  -webkit-animation: blob 10s linear infinite alternate;
-          animation: blob 10s linear infinite alternate;
-  overflow: visible;
+.blobs {
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-@-webkit-keyframes blob {
+.blobs .blob_first {
+  position: absolute;
+  background: #32e68c;
+  left: 80%;
+  top: 30%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-left: -50px;
+  -webkit-animation: click cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+          animation: click cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+}
+
+.blobs .blob_first:nth-child(1) {
+  z-index: 99;
+}
+
+@-webkit-keyframes click {
   0% {
-    border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
-  }
-  30% {
-    border-radius: 66% 90% 57% 100% / 80% 79% 71% 67%;
-  }
-  60% {
-    border-radius: 100% 79% 70% 100% / 94% 91% 83% 76%;
+    -webkit-transform: scale(1.2) translate(0, 0);
+            transform: scale(1.2) translate(0, 0);
   }
   100% {
-    border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
+    -webkit-transform: scale(1.2) translate(0, 0);
+            transform: scale(1.2) translate(0, 0);
   }
 }
 
-@keyframes blob {
+@keyframes click {
   0% {
-    border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
-  }
-  30% {
-    border-radius: 66% 90% 57% 100% / 80% 79% 71% 67%;
-  }
-  60% {
-    border-radius: 100% 79% 70% 100% / 94% 91% 83% 76%;
+    -webkit-transform: scale(1.2) translate(0, 0);
+            transform: scale(1.2) translate(0, 0);
   }
   100% {
-    border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
+    -webkit-transform: scale(1.2) translate(0, 0);
+            transform: scale(1.2) translate(0, 0);
   }
+}
+
+@-webkit-keyframes blob_click_1 {
+  3% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(0, -120px);
+            transform: scale(0.9) translate(0, -120px);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(0, -120px);
+            transform: scale(0.7) translate(0, -120px);
+  }
+}
+
+@keyframes blob_click_1 {
+  3% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(0, -120px);
+            transform: scale(0.9) translate(0, -120px);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(0, -120px);
+            transform: scale(0.7) translate(0, -120px);
+  }
+}
+
+@-webkit-keyframes blob_click_2 {
+  6% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(-120px, 0);
+            transform: scale(0.9) translate(-120px, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(-120px, 0);
+            transform: scale(0.7) translate(-120px, 0);
+  }
+}
+
+@keyframes blob_click_2 {
+  6% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(-120px, 0);
+            transform: scale(0.9) translate(-120px, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(-120px, 0);
+            transform: scale(0.7) translate(-120px, 0);
+  }
+}
+
+@-webkit-keyframes blob_click_3 {
+  9% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(120px, 0);
+            transform: scale(0.9) translate(120px, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(120px, 0);
+            transform: scale(0.7) translate(120px, 0);
+  }
+}
+
+@keyframes blob_click_3 {
+  9% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(120px, 0);
+            transform: scale(0.9) translate(120px, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(120px, 0);
+            transform: scale(0.7) translate(120px, 0);
+  }
+}
+
+@-webkit-keyframes blob_click_4 {
+  12% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(0, 120px);
+            transform: scale(0.9) translate(0, 120px);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(0, 120px);
+            transform: scale(0.7) translate(0, 120px);
+  }
+}
+
+@keyframes blob_click_4 {
+  12% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    -webkit-transform: scale(0.9) translate(0, 120px);
+            transform: scale(0.9) translate(0, 120px);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translate(0, 120px);
+            transform: scale(0.7) translate(0, 120px);
+  }
+}
+
+.blob_start {
+  position: absolute;
+  background: #32e68c;
+  left: 80%;
+  top: 30%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-left: -50px;
+  -webkit-animation: click cubic-bezier(0.77, 0, 0.175, 1) 4s;
+          animation: click cubic-bezier(0.77, 0, 0.175, 1) 4s;
+}
+
+.blob_start:nth-child(1) {
+  z-index: 99;
+}
+
+.blob_start:nth-child(2) {
+  -webkit-animation-name: blob_click_1;
+          animation-name: blob_click_1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.blob_start:nth-child(3) {
+  -webkit-animation-name: blob_click_2;
+          animation-name: blob_click_2;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.blob_start:nth-child(4) {
+  -webkit-animation-name: blob_click_3;
+          animation-name: blob_click_3;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.blob_start:nth-child(5) {
+  -webkit-animation-name: blob_click_4;
+          animation-name: blob_click_4;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 body {
