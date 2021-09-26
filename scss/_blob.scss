@@ -1,12 +1,10 @@
 .blobs {
 	filter: url("#goo");
 	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+    transform: translate(50vw, 50vh);
     .blob_first {
         position: absolute;
+        overflow: visible;
         background: #32e68c;
         left: 80%;
         top: 30%;
