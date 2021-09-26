@@ -1,0 +1,27 @@
+.blob_1 {
+    position: relative;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgb(124, 147, 248);
+    border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
+    animation: blob 10s linear infinite alternate;
+    overflow: visible;
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
+    }
+    30% {
+        border-radius: 66% 90% 57% 100% / 80% 79% 71% 67%;
+    }
+    60% {
+        border-radius: 100% 79% 70% 100% / 94% 91% 83% 76%;
+    }
+
+
+    100% {
+		border-radius: 75% 43% 39% 70% / 60% 42% 71% 57%;
+    }
+}
