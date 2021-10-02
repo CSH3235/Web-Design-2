@@ -97,7 +97,7 @@ window.onload=function() {
                 sp1.classList.add("square_part_1_container_re");
 
                 for(let i = 1; i < node1.length; i += 2) {
-                    node1[i].style.zIndex = 99;
+                    node1[i].style.zIndex = 9;
                 }
                 ClickCount = 0;
             }, 100)

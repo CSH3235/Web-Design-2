@@ -1,14 +1,20 @@
 .btn-container {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    
     #nextBtn {
         border: 2px solid #242424;
         border-radius:10px;
         background-color: rgba(0,0,0,0);
         padding: 10px 50px;
+        z-index: 10;
     }
 
     #nextBtn:hover {

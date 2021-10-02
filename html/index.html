@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
+    <!-- Change Page Button -->
+
+    <div class="btn-container">
+        <button type="button" id="nextBtn"></button>
+    </div>
 
     <div id="toggle">
         <input type="checkbox" id="check"/>
@@ -43,26 +48,12 @@
         <div class="blob_start blob_end">4</div>
     </div> -->
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-        </defs>
-    </svg>
 
     <figure class="sphere_1"></figure>
     <figure class="sphere_2"></figure>
     <figure class="sphere_3"></figure>
 
     
-    <!-- Change Page Button -->
-
-    <div class="btn-container">
-        <button type="button" id="nextBtn"></button>
-    </div>
 
     <!-- Change Page -->
 
