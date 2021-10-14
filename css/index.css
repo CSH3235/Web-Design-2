@@ -743,6 +743,7 @@ a:hover {
 }
 
 .btn-container {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,7 +754,7 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  height: 3%;
   margin: 0 auto;
   text-align: center;
 }
@@ -789,40 +790,6 @@ a:hover {
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.btn-container .effect:active {
-  border: 2px solid #666;
-  background-color: #FFF;
-  -webkit-box-shadow: 0px 0px 0px 4px #EEE inset;
-          box-shadow: 0px 0px 0px 4px #EEE inset;
-}
-
-.btn-container .effect:after {
-  background: #FFF;
-  border: 0px solid #000;
-  content: "";
-  height: 155px;
-  left: -75px;
-  opacity: .8;
-  position: absolute;
-  top: -50px;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
-  width: 50px;
-  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  /*easeOutCirc*/
-  z-index: 1;
-}
-
-.btn-container .effect:hover:after {
-  background: #FFF;
-  border: 20px solid #000;
-  opacity: 0;
-  left: 120%;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
 }
 
 body {

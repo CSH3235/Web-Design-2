@@ -7,6 +7,9 @@ window.onload=function() {
 
 
 
+    
+
+
     sp1.classList.remove("square_part_1_container");
 
     sp2.classList.remove("square_part_2_container_re");
