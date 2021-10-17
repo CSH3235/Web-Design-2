@@ -8,6 +8,7 @@
     height: 3%;
     margin: 0 auto;
 
+    
     text-align: center;
     
     #nextBtn {
@@ -16,7 +17,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        background-color: #FFF;
+        background-color: rgb(206, 55, 55);
         padding:  10px 0;
         width: 100px;
         z-index: 10;
@@ -25,7 +26,7 @@
 
 
     .effect {
-        color: #FFF;
+        color: rgb(226, 128, 128);
         border: 2px solid #000;
         box-shadow:0px 0px 0px 1px #000 inset;
         background-color: #000;

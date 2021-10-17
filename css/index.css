@@ -774,14 +774,14 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #FFF;
+  background-color: #ce3737;
   padding: 10px 0;
   width: 100px;
   z-index: 10;
 }
 
 .btn-container .effect {
-  color: #FFF;
+  color: #e28080;
   border: 2px solid #000;
   -webkit-box-shadow: 0px 0px 0px 1px #000 inset;
           box-shadow: 0px 0px 0px 1px #000 inset;
