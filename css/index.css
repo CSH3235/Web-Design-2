@@ -744,52 +744,71 @@ a:hover {
 
 .btn-container {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  top: 50%;
+  left: 90%;
+  z-index: 99;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
-  height: 3%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .btn-container #nextBtn {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #ce3737;
-  padding: 10px 0;
-  width: 100px;
-  z-index: 10;
+  padding: 5px 5px;
+  background: transparent;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: none;
+  border-left: none;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
-.btn-container .effect {
-  color: #e28080;
-  border: 2px solid #000;
-  -webkit-box-shadow: 0px 0px 0px 1px #000 inset;
-          box-shadow: 0px 0px 0px 1px #000 inset;
-  background-color: #000;
-  overflow: hidden;
+.btn-container #nextBtn.right {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.btn-container #nextBtn.right:hover {
+  border-color: orange;
+  -webkit-transform: rotate(45deg) translateX(5px);
+          transform: rotate(45deg) translateX(5px);
+}
+
+.btn-container #prevBtn {
   position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  top: 10px;
+  left: -40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5px 5px;
+  background: transparent;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: none;
+  border-left: none;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.btn-container #prevBtn.left {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.btn-container #prevBtn.left:hover {
+  border-color: orange;
+  -webkit-transform: rotate(-135deg) translateY(5px);
+          transform: rotate(-135deg) translateY(5px);
 }
 
 body {

@@ -5,18 +5,6 @@ window.onload=function() {
 
     let node1 = sp1.childNodes;
 
-
-
-    
-
-
-
-
-
-    
-
-
-
     sp1.classList.remove("square_part_1_container");
 
     sp2.classList.remove("square_part_2_container_re");
@@ -25,6 +13,7 @@ window.onload=function() {
 
     sp3.classList.remove("square_part_3_container_re");
     sp3.classList.remove("square_part_3_container");
+    
     let NextBtn = document.getElementById("nextBtn");
     
 

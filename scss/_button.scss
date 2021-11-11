@@ -1,48 +1,63 @@
-.btn-container {
-    position:absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    width: 100%;
-    height: 3%;
-    margin: 0 auto;
-
-    
-    text-align: center;
-    
-    #nextBtn {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        background-color: rgb(206, 55, 55);
-        padding:  10px 0;
-        width: 100px;
-        z-index: 10;
-        
+@mixin hovered($val) {
+    @if $val == right {
+        transform: rotate(45deg) translateX(5px);
     }
-
-
-    .effect {
-        color: rgb(226, 128, 128);
-        border: 2px solid #000;
-        box-shadow:0px 0px 0px 1px #000 inset;
-        background-color: #000;
-        overflow: hidden;
-        position: relative;
-        transition: all 0.3s ease-in-out;
+    @else if $val == left {
+        transform: rotate(-135deg) translateY(5px);
     }
 }
 
+.btn-container {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    z-index: 99;
+    box-sizing: border-box;
+    width: 100%;
+    #nextBtn {
+        justify-content: center;
+        text-align: center;
+        padding: 5px 5px;
 
-// .button:hover, 
-// .button:focus {
-//     animation: pulse 1s;
-//     box-shadow: 0 0 0 2em rgba(#fff,0);
-// }
+        background: transparent;
 
-// @keyframes pulse {
-//     0% { box-shadow: 0 0 0 0 var(--hover); }
-// }
+        border-top: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom:none;
+        border-left: none;
+        box-shadow: 0 0 0 0;
+        transition: all 200ms ease;
+    
+        &.right {
+            transform:rotate(45deg);
+            &:hover {
+                border-color: orange;
+                @include hovered(right);
+            }
+        }
+    }
+    #prevBtn {
+        position: relative;
+        top: 10px;
+        left: -40px;
+        justify-content: center;
+        text-align: center;
+        padding: 5px 5px;
+
+        background: transparent;
+
+        border-top: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom:none;
+        border-left: none;
+        box-shadow: 0 0 0 0;
+        transition: all 200ms ease;
+        &.left {
+            transform: rotate(-135deg);
+            &:hover {
+                border-color: orange;
+                @include hovered(left);
+            }
+        }
+    }
+}
