@@ -3,23 +3,32 @@ window.onload=function() {
     let sp2 = document.getElementById("SP2");
     let sp3 = document.getElementById("SP3");
 
-    let node1 = sp1.childNodes;
 
+    let node1 = sp1.childNodes;
+    ////////////////////////////////////////////////////////////////
     sp1.classList.remove("square_part_1_container");
 
     sp2.classList.remove("square_part_2_container_re");
     sp2.classList.remove("square_part_2_container");
     
-
     sp3.classList.remove("square_part_3_container_re");
     sp3.classList.remove("square_part_3_container");
-    
+    ////////////////////////////////////////////////////////////////
+    sp1.classList.remove("square_part_1_container_back");
+    sp1.classList.remove("square_part_1_container_back_re");
+
+
+
+    sp3.classList.remove("square_part_3_container_back_re");
+    sp3.classList.remove("square_part_3_container_back");
+    ////////////////////////////////////////////////////////////////
     let NextBtn = document.getElementById("nextBtn");
-    
+    let PrevBtn = document.getElementById("prevBtn");
 
     let ClickCount = 0;
 
     NextBtn.addEventListener("click", function(e){
+
         if (ClickCount === 0) {
             
             e.preventDefault;
@@ -88,6 +97,7 @@ window.onload=function() {
             sp3.classList.add("square_part_3_container");
 
             NextBtn.disabled = true;
+            
             setTimeout(function(){
                 e.preventDefault;
                 sp1.classList.remove("square_part_1_container");
@@ -107,7 +117,36 @@ window.onload=function() {
             }, 1300);
         
         }
+        console.log(ClickCount);
     }, false);
+
+    PrevBtn.addEventListener("click", function(e){
+        console.log(ClickCount);
+        if (ClickCount === 0) {
+            
+            e.preventDefault;
+            void sp1.offsetWidth;
+            sp1.classList.remove("square_part_1_container_re");
+            sp1.classList.remove("square_part_1_container_back_re");
+            sp1.classList.add("square_part_1_container_back");
+            ClickCount += 1;
+
+            PrevBtn.disabled = true;
+
+            setTimeout(function(){
+                for(let i = 1; i < node1.length; i += 2) {
+                    node1[i].style.zIndex = 0;
+                }
+                e.preventDefault;
+                void sp3.offsetWidth;
+                sp3.classList.add("square_part_3_container_back_re");
+            }, 100);
+
+            setTimeout(function(){
+                if(NextBtn.disabled === true) {
+                    NextBtn.disabled = false;
+                }
+            }, 1300);
+        }
+});
 }
-
-
