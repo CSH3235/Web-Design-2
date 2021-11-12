@@ -54,6 +54,7 @@ window.onload=function() {
             ClickCount += 1;
 
             NextBtn.disabled = true;
+            PrevBtn.disabled = true;
 
             setTimeout(function(){
                 for(let i = 1; i < node1.length; i += 2) {
@@ -68,6 +69,7 @@ window.onload=function() {
             setTimeout(function(){
                 if(NextBtn.disabled === true) {
                     NextBtn.disabled = false;
+                    PrevBtn.disabled = false;
                 }
             }, 1300);
         }
@@ -91,6 +93,7 @@ window.onload=function() {
             sp2.classList.add("square_part_2_container");
             ClickCount += 1;
             NextBtn.disabled = true;
+            PrevBtn.disabled = true;
 
             setTimeout(function(){
                 e.preventDefault;
@@ -100,6 +103,7 @@ window.onload=function() {
             setTimeout(function(){
                 if(NextBtn.disabled === true) {
                     NextBtn.disabled = false;
+                    PrevBtn.disabled = false;
                 }
             }, 1300);
         }
@@ -120,6 +124,7 @@ window.onload=function() {
             sp3.classList.add("square_part_3_container");
 
             NextBtn.disabled = true;
+            PrevBtn.disabled = true;
             
             setTimeout(function(){
         
@@ -138,7 +143,7 @@ window.onload=function() {
             setTimeout(function(){
                 if(NextBtn.disabled === true) {
                     NextBtn.disabled = false;
-                    
+                    PrevBtn.disabled = false;
                 }
             }, 1300);
         
@@ -165,6 +170,7 @@ window.onload=function() {
             ClickCount = 2;
 
             PrevBtn.disabled = true;
+            NextBtn.disabled = true;
 
             setTimeout(function(){
                 document.body.style.background = "#f76161";
@@ -175,13 +181,14 @@ window.onload=function() {
                 void sp3.offsetWidth;
                 sp3.classList.add("square_part_3_container_back_re");
                 sp3.classList.remove("square_part_3_container");
-            }, 800);
+            }, 1000);
 
             setTimeout(function(){
                 if(PrevBtn.disabled === true) {
                     PrevBtn.disabled = false;
+                    NextBtn.disabled = false;
                 }
-            }, 2000);
+            }, 2100);
         }
 
 
@@ -200,6 +207,7 @@ window.onload=function() {
 
             sp3.classList.add("square_part_3_container_back");
             PrevBtn.disabled = true;
+            NextBtn.disabled = true;
             
             setTimeout(function(){
                 document.body.style.background = "#57ff97";
@@ -216,13 +224,13 @@ window.onload=function() {
                 }
                 ClickCount = 1;
                 
-            }, 800)
+            }, 1000)
             setTimeout(function(){
                 if(PrevBtn.disabled === true) {
                     PrevBtn.disabled = false;
-                    
+                    NextBtn.disabled = false;
                 }
-            }, 2000);
+            }, 2100);
         
         }
 
@@ -236,9 +244,10 @@ window.onload=function() {
             sp2.classList.add("square_part_2_container_back");
             ClickCount = 0;
             PrevBtn.disabled = true;
+            NextBtn.disabled = true;
 
 
-            sp1.classList.remove("square_part_1_container");
+        
             sp2.classList.remove("square_part_2_container_re");
             setTimeout(function(){
                 document.body.style.background = "#a1c4fd";
@@ -246,12 +255,14 @@ window.onload=function() {
                 e.preventDefault;
                 void sp1.offsetWidth;
                 sp1.classList.add("square_part_1_container_back_re");
-            }, 800)
+                sp1.classList.remove("square_part_1_container");
+            }, 1000)
             setTimeout(function(){
                 if(PrevBtn.disabled === true) {
                     PrevBtn.disabled = false;
+                    NextBtn.disabled = false;
                 }
-            }, 2000);
+            }, 2100);
         }
 
 });
