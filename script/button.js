@@ -105,7 +105,6 @@ window.onload=function() {
         }
         
         else if (ClickCount === 2) {
-            alert("아직 준비중입니다.");
             e.preventDefault;
             sp3.classList.remove("square_part_3_container_re");
             sp3.classList.remove("square_part_3_container");
@@ -176,13 +175,13 @@ window.onload=function() {
                 void sp3.offsetWidth;
                 sp3.classList.add("square_part_3_container_back_re");
                 sp3.classList.remove("square_part_3_container");
-            }, 1000);
+            }, 800);
 
             setTimeout(function(){
                 if(PrevBtn.disabled === true) {
                     PrevBtn.disabled = false;
                 }
-            }, 1300);
+            }, 2000);
         }
 
 
@@ -223,7 +222,7 @@ window.onload=function() {
                     PrevBtn.disabled = false;
                     
                 }
-            }, 1300);
+            }, 2000);
         
         }
 
@@ -238,6 +237,9 @@ window.onload=function() {
             ClickCount = 0;
             PrevBtn.disabled = true;
 
+
+            sp1.classList.remove("square_part_1_container");
+            sp2.classList.remove("square_part_2_container_re");
             setTimeout(function(){
                 document.body.style.background = "#a1c4fd";
 
@@ -249,7 +251,7 @@ window.onload=function() {
                 if(PrevBtn.disabled === true) {
                     PrevBtn.disabled = false;
                 }
-            }, 1300);
+            }, 2000);
         }
 
 });
