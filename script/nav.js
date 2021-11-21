@@ -10,6 +10,8 @@ $(document).ready(function() {
         } else {
             nav.style.opacity = 0;
             nav.style.zIndex = -9;
+    
+            
         }
 
     });
