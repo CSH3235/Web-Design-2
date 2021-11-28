@@ -9,6 +9,7 @@ $(document).ready(function() {
             nav.style.zIndex = 9;
         } else {
             nav.style.opacity = 0;
+            
             nav.style.zIndex = -9;
     
             
