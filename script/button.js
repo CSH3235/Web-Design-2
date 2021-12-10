@@ -18,6 +18,7 @@ window.onload=function() {
     sp1.classList.remove("square_part_1_container_back");
     sp1.classList.remove("square_part_1_container_back_re");
 
+
     sp2.classList.remove("square_part_2_container_back");
     sp2.classList.remove("square_part_2_container_back_re");
 
