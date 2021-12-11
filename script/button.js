@@ -12,6 +12,8 @@ window.onload=function() {
     sp2.classList.remove("square_part_2_container_re");
     sp2.classList.remove("square_part_2_container");
     
+    
+
     sp3.classList.remove("square_part_3_container_re");
     sp3.classList.remove("square_part_3_container");
     ////////////////////////////////////////////////////////////////
