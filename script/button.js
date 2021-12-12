@@ -5,6 +5,7 @@ window.onload=function() {
 
     let bg = document.getElementsByTagName("body")[0]
 
+    
     let node1 = sp1.childNodes;
     ////////////////////////////////////////////////////////////////
     sp1.classList.remove("square_part_1_container");
