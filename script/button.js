@@ -78,6 +78,8 @@ window.onload=function() {
             }, 1300);
         }
         
+
+        
         else if (ClickCount === 1) {
 
             e.preventDefault;
