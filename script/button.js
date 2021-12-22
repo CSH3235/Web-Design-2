@@ -80,6 +80,8 @@ window.onload=function() {
         
 
         
+
+        
         else if (ClickCount === 1) {
 
             e.preventDefault;
