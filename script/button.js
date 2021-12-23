@@ -60,6 +60,7 @@ window.onload=function() {
             NextBtn.disabled = true;
             PrevBtn.disabled = true;
 
+            
             setTimeout(function(){
                 for(let i = 1; i < node1.length; i += 2) {
                     node1[i].style.zIndex = 0;
