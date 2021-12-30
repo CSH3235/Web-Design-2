@@ -1,0 +1,62 @@
+.snowflake {
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(var(--blur));
+}
+
+$snowball : 240;
+
+@for $i from 1 through $snowball {
+
+    @each $k in random(30) {
+        .snowflake:nth-child(#{$k}) {
+            background: white;
+            --size: #{random(5) * .2}vw;
+            --X_3: #{random(50) - random(10)}vw;
+            --X_4: #{random(30)}vw;
+            --blur: #{random(4) + 1}px;
+            --speed_slow: #{random(50) + 100}vh;
+            left: #{random(120)}vw;
+
+            animation: far_snow 20s linear infinite;
+            animation-delay: -#{random(30)}s;
+        }
+    }
+
+
+
+    .snowflake:nth-child(#{$i}) {
+        --size: #{random(3) * .2}vw;
+        --X_1: -#{random(50) + 10}vw;
+        --X_2: #{random(30)}vw;
+        --speed: #{random(200) + 100}vh;
+        left: #{random(120)}vw;
+
+
+        animation: light_snow 20s linear infinite;
+        animation-delay: -#{random(30)}s;
+    }
+}
+
+
+
+@keyframes light_snow {
+    0% {
+        transform: translate3d(var(--X_1), 0, 0);
+    }
+    100% {
+        transform: translate3d(var(--X_2), var(--speed), 0);
+    }
+}
+
+@keyframes far_snow {
+    0% {
+        transform: translate3d(var(--X_3), 0, 0);
+    }
+    100% {
+        transform: translate3d(var(--X_4), var(--speed_slow), 0);
+    }
+}
