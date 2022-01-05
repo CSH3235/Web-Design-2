@@ -28,11 +28,6 @@ $snowball : 240;
 
     
 
-    
-
-
-    
-
 
     .snowflake:nth-child(#{$i}) {
         --size: #{random(3) * .2}vw;
