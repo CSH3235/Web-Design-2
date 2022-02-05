@@ -40,7 +40,6 @@ $snowball : 240;
         --speed: #{random(200) + 100}vh;
         left: #{random(120)}vw;
 
-
         animation: light_snow 20s linear infinite;
         animation-delay: -#{random(30)}s;
     }
@@ -54,7 +53,6 @@ $snowball : 240;
         transform: translate3d(var(--X_2), var(--speed), 0);
     }
 }
-
 
 
 @keyframes far_snow {
